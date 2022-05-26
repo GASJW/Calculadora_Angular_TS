@@ -1,0 +1,44 @@
+<form>
+  <div>
+    <label for="n1">Número 1</label>
+    <br />
+    <input type="text" id="n1" name="numero1" [(ngModel)]="numero1" />
+  </div>
+  <div>
+    <label for="n2">Número 2</label>
+    <br />
+    <input type="text" id="n2" name="numero2" [(ngModel)]="numero2" />
+  </div>
+
+  <div>
+    <input
+      id="adicao"
+      (click)="adicao()"
+      value="+"
+      type="button"
+      class="w3-btn w3-blue"
+    />
+    <input
+      id="subtracao"
+      (click)="subtracao()"
+      value="-"
+      type="button"
+      class="w3-btn w3-blue"
+    />
+    <input
+      id="multi"
+      (click)="multiplicacao()"
+      value="*"
+      type="button"
+      class="w3-btn w3-blue"
+    />
+    <input
+      id="divis"
+      (click)="validarDivisao()"
+      value="/"
+      type="button"
+      class="w3-btn w3-blue"
+    />
+  </div>
+  <label id="resultado" name="resultado">{{ resultado }}</label>
+</form>
